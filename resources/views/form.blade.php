@@ -27,7 +27,6 @@
         
         <label for="name">Pet Name: </label>
         <input type="text" name="name" id="name" style="{{ $errors->has('name') ? 'border: 1px solid red' : ''}}" value="{{ old('name') }}"> <br/>
-        
         <span class="text-danger">{{ $errors->first('name') }}</span><br>
         
 
