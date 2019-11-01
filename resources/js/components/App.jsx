@@ -2,25 +2,37 @@ import React from 'react';
 import Petcard from './Petcard.jsx';
  
 export default class App extends React.Component {
-        // constructor(props) {
-        //     super(props);
+        constructor(props) {
+            super(props);
 
-        //     this.state = {
-        //         logged_in: false,
-        //         token: null
-        //     };
-        // }
+            this.state = {
+                data: null,
+                logged_in: false,
+                token: null
+            };
+        }
 
-
-
+    componentDidMount() {
+        fetch("/api/pets")
+            .then(response => response.json())
+            .then(dataResponse => this.setState({ data: dataResponse }));
+    }
 
     render() {
-        return (
-            <div className="container">
-            <h1>Hi</h1>
-            <Petcard/>
-            </div>
-        )
+        // console.log(this.state.data);
+        // return (
+        //     <div className="container">
+        //     <Petcard/>
+        //     <Petcard/>
+        //     </div>
+        // )
+
+        return this.state.data
+        ? this.state.data.map(pet => 
+        <Petcard
+        pet={pet}
+        />)
+        : "Loading..";
             
     }
 }

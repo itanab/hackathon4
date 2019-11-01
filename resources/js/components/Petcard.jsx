@@ -16,21 +16,28 @@ export default class Petcard extends React.Component {
 render() {
     return (
         <div className="petcard">
-            <img className="petimage" src="" alt=""/>
+            <img className="petimage" src={`./images/${this.props.pet.photo}`} alt=""/>
             <div className="infolist">
-                <ul>
-                    {/* <li>Pet name:{this.props.petName}</li>
-                    <li>Owner name:{this.props.ownerName}</li>
-                    <li>Breed:{this.props.breedName}</li>
-                    <li>Weight:{this.props.weight}</li>
-                    <li>Age:{this.props.age}</li> */}
-
-                    <li>Pet name:</li>
-                    <li>Owner name:</li>
-                    <li>Breed:</li>
-                    <li>Weight:</li>
-                    <li>Age:</li>
-                </ul>
+                <div className="row">
+                    <p>Pet name:</p>
+                    <p>{this.props.pet.name}</p>
+                </div>
+                <div className="row">
+                    <p>Owner name:</p>
+                    <p>{this.props.pet.owner}</p>
+                </div>
+                <div className="row">
+                    <p>Breed:</p>
+                    <p>{this.props.pet.breed}</p>
+                </div>
+                <div className="row">
+                    <p>Weight:</p>
+                    <p>{this.props.pet.weight}</p>
+                </div>
+                <div className="row">
+                    <p>Age:</p>
+                    <p>{this.props.pet.age}</p>
+                </div>
             </div>
         </div>
     )
