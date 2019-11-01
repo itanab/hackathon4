@@ -14,7 +14,9 @@
 
     </head>
     <body>
-        <h1>Welcome to St. Hector's Veterinary Clinic</h1>
+        <header>
+            <h1>Welcome to St. Hector's Veterinary Clinic</h1>
+        </header>
         <div id="app"></div>
         <script src="{{ mix('js/app.js') }}"></script>
     </body>

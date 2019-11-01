@@ -30,7 +30,7 @@ export default class Button extends React.Component {
 render() {
   return (
       <>
-      <button onClick={this.handleClick}>{this.props.type}</button>
+      <button className={this.props.type} onClick={this.handleClick}>{this.props.type}</button>
       </>
   )
       

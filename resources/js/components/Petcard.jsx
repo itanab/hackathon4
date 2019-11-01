@@ -17,6 +17,7 @@ export default class Petcard extends React.Component {
 render() {
     return (
         <div className="petcard">
+            <div class="information">
             <img className="petimage" src={`./images/${this.props.pet.photo}`} alt=""/>
             <div className="infolist">
                 <div className="row">
@@ -40,14 +41,17 @@ render() {
                     <p>{this.props.pet.age}</p>
                 </div>
             </div>
-            <Button
-            type="update"
-            petid={this.props.pet.id}
-            />
-            <Button
-            type="delete"
-            petid={this.props.pet.id}
-            />
+            </div>
+                <div className="buttons">
+                <Button
+                type="update"
+                petid={this.props.pet.id}
+                />
+                <Button
+                type="delete"
+                petid={this.props.pet.id}
+                />
+            </div>
         </div>
     )
         
