@@ -9,9 +9,11 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        <link rel="stylesheet" href="/css/app.css">
+
     </head>
     <body>
-        hi
+        <h1>Welcome to St. Hector's Veterinary Clinic</h1>
         <div id="app"></div>
         <script src="{{ mix('js/app.js') }}"></script>
     </body>
