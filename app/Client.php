@@ -9,6 +9,6 @@ class Client extends Model
     public $timestamps = false;
     public function pets()
     {
-        return $this->hasMany('App\Pet');
+        return $this->hasMany('App\Pet', 'client_id', 'id');
     }
 }

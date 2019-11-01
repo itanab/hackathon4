@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/pets', 'Api\PetsController@index');
+Route::get('/pet', 'Api\PetsController@show');
+Route::get('/search', 'Api\PetsController@search');
+
