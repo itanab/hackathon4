@@ -17,3 +17,8 @@ Route::get('/', function () {
 
 Route::get('/form', 'AdminController@create');
 Route::post('/form', 'AdminController@store');
+
+Route::get('/clientform', 'ClientController@create');
+Route::post('/clientform', 'ClientController@store');
+Route::get('/{id}/clientform', 'ClientController@edit');
+Route::put('/{id}/clientform', 'ClientController@update');
