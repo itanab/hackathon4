@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from "./Button.jsx"
 
 export default class Petcard extends React.Component {
     constructor(props) {
@@ -39,6 +40,14 @@ render() {
                     <p>{this.props.pet.age}</p>
                 </div>
             </div>
+            <Button
+            type="update"
+            petid={this.props.pet.id}
+            />
+            <Button
+            type="delete"
+            petid={this.props.pet.id}
+            />
         </div>
     )
         

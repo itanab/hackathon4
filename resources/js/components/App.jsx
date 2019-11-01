@@ -1,5 +1,5 @@
 import React from 'react';
-import Petcard from './Petcard.jsx';
+import Searchbox from './Searchbox.jsx';
  
 export default class App extends React.Component {
         constructor(props) {
@@ -27,11 +27,14 @@ export default class App extends React.Component {
         //     </div>
         // )
 
-        return this.state.data
-        ? this.state.data.map(pet => 
+        return this.state.data ? 
+        <>
+        <Searchbox/>
+        {/* {this.state.data.map(pet => 
         <Petcard
         pet={pet}
-        />)
+        />)} */}
+        </>
         : "Loading..";
             
     }
