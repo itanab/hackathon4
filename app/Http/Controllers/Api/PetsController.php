@@ -33,9 +33,6 @@ class PetsController extends Controller
         } else {
             return "missing id";
         }
-
-        
-
        
     }
 
@@ -52,4 +49,6 @@ class PetsController extends Controller
         
         return $collection;
     }
+
+   
 }

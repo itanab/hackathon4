@@ -12,4 +12,6 @@ class Pet extends Model
     {
         return $this->hasOne('App\Client', 'id', 'client_id');
     }
+
+    protected $fillable = ['name', 'breed', 'weight', 'age', 'client_id'];
 }
