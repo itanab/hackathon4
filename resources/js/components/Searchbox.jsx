@@ -32,10 +32,11 @@ render() {
       <>
       <label htmlFor="search">Search pets</label>
       <input type="text" name="search" id="search" onChange={this.handleChange}/>
-      {this.state.data ? this.state.data.map(pet => 
+
+      <div className="pets" >{this.state.data ? this.state.data.map(pet => 
         <Petcard
         pet={pet}
-        />) : "loading"}
+        />) : "loading"} </div>
       </>
   )
       

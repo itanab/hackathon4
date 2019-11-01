@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+  
+  body{
+    background-image: url("../images/background.jpg"); 
+    margin:0px; 
+    
+  }
+  
+  #app{
+    width: 70%;
+    margin-left: 15%;
+    background-color: white;
+    padding-top: 8%;
+  
+    
+  }
+
+  .pets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  header{
+    background-color: rgba(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid black;
+  }
+  
+  .information{
+    display: flex;
+    margin:0.5rem;
+  }
+  .petcard {
+    max-width: 500px;
+    border: solid rgb(49, 49, 49) 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow:  7px 3px 15px -4px rgba(0,0,0,0.83);
+  
+    .petimage {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  
+    .infolist {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+      width: 50%;
+    }
+  
+    .row {
+      display: flex;
+      //justify-content: space-between;
+      p{
+        margin: 1px;
+      }
+    }
+  
+    .buttons{
+      text-align: center;
+      button{
+        margin:1rem;
+      }
+  
+      .update{
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+      }
+  
+      .delete{
+        background-color: #f44336; 
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+    button {
+      align-self: baseline;
+    }
+  }
+  
