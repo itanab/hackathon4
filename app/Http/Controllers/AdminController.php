@@ -27,7 +27,7 @@ class AdminController extends Controller
             'client_id'=>$request->input('client_id')
         ]);
 
-        return 'Pet saved succesfully!!!!!!!!'; 
+        return redirect('/')->with('success', 'Pet added!');
     }
 
     public function edit($id)
@@ -46,9 +46,9 @@ class AdminController extends Controller
             'breed'=>$request->input('breed'),
             'weight'=>$request->input('weight'),
             'age'=>$request->input('age'),
-            'client_id'=>$request->input('client_id')
         ])->save();
 
-        return "successfully updated";
+        return redirect('/')->with('success', 'Pet added!');
+
     }
 }
