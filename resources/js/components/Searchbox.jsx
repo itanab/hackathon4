@@ -30,8 +30,8 @@ render() {
   console.log(this.state.data);
   return (
       <>
-      <label htmlFor="search">Search pets</label>
-      <input type="text" name="search" id="search" onChange={this.handleChange}/>
+      
+      <input className="search" type="text" name="search" id="search" placeholder="Search dogs" onChange={this.handleChange}/>
 
       <div className="pets" >{this.state.data ? this.state.data.map(pet => 
         <Petcard

@@ -21,23 +21,23 @@ render() {
             <img className="petimage" src={`./images/${this.props.pet.photo}`} alt=""/>
             <div className="infolist">
                 <div className="row">
-                    <p>Pet name:</p>
+                    <strong>Pet name:</strong>
                     <p>{this.props.pet.name}</p>
                 </div>
                 <div className="row">
-                    <p>Owner name:</p>
+                    <strong>Owner:</strong>
                     <p>{this.props.pet.owner}</p>
                 </div>
                 <div className="row">
-                    <p>Breed:</p>
+                    <strong>Breed:</strong>
                     <p>{this.props.pet.breed}</p>
                 </div>
                 <div className="row">
-                    <p>Weight:</p>
+                    <strong>Weight:</strong>
                     <p>{this.props.pet.weight}</p>
                 </div>
                 <div className="row">
-                    <p>Age:</p>
+                    <strong>Age:</strong>
                     <p>{this.props.pet.age}</p>
                 </div>
             </div>
