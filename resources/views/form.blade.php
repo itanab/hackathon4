@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>Document</title>
-</head>
-<body>
-    
-
-
 @extends('layout')
 
 @section('content')
-    <h1>PET REGISTRATION FORM</h1>
+    <h3>PET REGISTRATION FORM</h3>
 
     <form action="{{action('AdminController@store')}}" method="post">
         
@@ -48,6 +35,3 @@
     </form>
 
 @endsection
-
-</body>
-</html>

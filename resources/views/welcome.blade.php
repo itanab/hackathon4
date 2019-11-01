@@ -16,6 +16,8 @@
     <body>
         <header>
             <h1>Welcome to St. Hector's Veterinary Clinic</h1>
+            <a href="{{action('AdminController@create')}}">Add Pet</a>
+            <a href="{{action('ClientController@create')}}">Add Client</a>
         </header>
         <div id="app"></div>
         <script src="{{ mix('js/app.js') }}"></script>
